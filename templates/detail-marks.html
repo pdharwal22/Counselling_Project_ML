@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Marks Details</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<style>
+			body {
+			  background-image: url('static/background_register.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+
+			.jumbotron {
+				height: 40px;
+				padding-top: 30px;
+			}
+
+			input[type=text], select {
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			}
+
+			div.form {
+			  border-radius: 5px;
+			  background-color: #f2f2f2;
+			  padding: 20px;
+			  position: relative;
+			  margin-left: 580px;
+			  margin-right: 580px;
+			}
+
+			div.jumbotron{
+				background-color: transparent;
+				color: white;
+			}
+
+		</style>
+
+	</head>
+	<body>
+        <div class="jumbotron text-center">
+			<h2><b>Enter Registration Number</b></h2>
+		</div>
+
+        <div class="form">
+			<form action="view-marks" method="post">
+				<label for="reg">Registration Number</label>
+				<input type="text" id="reg" name="txtReg3" placeholder="Enter registration number" >
+
+				<label for="sub">Subject</label>
+				<input type="text" id="sub" name="txtSub" placeholder="Enter subject" >
+
+				<button type="submit" class="btn btn-success">Proceed</button>
+			</form>
+		</div>
+
+    </body>
+</html>

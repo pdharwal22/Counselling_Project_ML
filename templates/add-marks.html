@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add Marks</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<style>
+			body {
+			  background-image: url('static/marks_bg.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+
+			input[type=text], select {
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			}
+
+			div.form {
+			  border-radius: 5px;
+			  background-color: #f2f2f2;
+			  padding: 20px;
+			  position: relative;
+			  margin-left: 580px;
+			  margin-right: 580px;
+			}
+
+			div.jumbotron{
+				background-color: transparent;
+				color: white;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+			<h2><b>Enter your score</b></h2>
+		</div>
+
+		<div class="form">
+			<form action="add-marks" method="post">
+				<label for="reg">Registration No.</label>
+				<input type="text" id="reg" name="txtReg" placeholder="Enter Student's Registration Number" >
+
+				<label for="subject">Subject</label>
+				<input type="text" id="subject" name="txtSubject" placeholder="Enter Subject" >
+
+				<label for="cl1">Class 1</label>
+				<input type="text" id="cl1" name="c1" placeholder="Enter score here" >
+
+				<label for="cl2">Class 2</label>
+				<input type="text" id="cl2" name="c2" placeholder="Enter score here" >
+
+				<label for="cl3">Class 3</label>
+				<input type="text" id="cl3" name="c3" placeholder="Enter score here" >
+
+				<label for="cl4">Class 4</label>
+				<input type="text" id="cl4" name="c4" placeholder="Enter score here" >
+
+				<label for="cl5">Class 5</label>
+				<input type="text" id="cl5" name="c5" placeholder="Enter score here" >
+
+				<label for="cl6">Class 6</label>
+				<input type="text" id="cl6" name="c6" placeholder="Enter score here" >
+
+				<label for="cl7">Class 7</label>
+				<input type="text" id="cl7" name="c7" placeholder="Enter score here" >
+
+				<label for="cl8">Class 8</label>
+				<input type="text" id="cl8" name="c8" placeholder="Enter score here" >
+
+				<label for="cl9">Class 9</label>
+				<input type="text" id="cl9" name="c9" placeholder="Enter score here" >
+
+				<button type="submit" class="btn btn-primary">Add Record</button>
+			</form>
+		</div>
+	</body>
+</html>

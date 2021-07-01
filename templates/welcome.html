@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Counselling Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<style>
+
+			body {
+			  background-image: url('static/welcome.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+
+			div.button {
+				margin-left: 1250px;
+				margin-right: 0px;
+			}
+
+			div.card-columns{
+				margin-top: 80px;
+				margin-left: 80px;
+				margin-right: 80px;
+			}
+
+			#card2 {
+				margin-top: 5px;
+				margin-left: 80px;
+				margin-right: 80px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="#">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="view-student">All Students</a>
+					</li>
+				</ul>
+				<form class="form-inline" action="/action_page.php">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+					<button class="btn btn-warning" type="submit">Search</button>
+				</form>
+				<ul class="navbar-nav navbar-right">
+					<li class="nav-item">
+						<a class="nav-link" href=""><i class="glyphicon glyphicon-user"></i> Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href=""><i class="glyphicon glyphicon-log-out"></i> LogOut</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="card-columns">
+			<!--Add Student-->
+			<div class="card bg-light" style="width:400px">
+				<img class="card-img-top" src="static/add.png" alt="Card image" style="width:50%">
+				<div class="card-body">
+					<a href="add-student" class="btn btn-outline-danger btn-lg">Add Student</a>
+				</div>
+			</div>
+			<!--Delete Student-->
+			<div class="card bg-light" style="width:400px">
+				<img class="card-img-top" src="static/delete.png" alt="Card image" style="width:50%">
+				<div class="card-body">
+					<a href="delete" class="btn btn-outline-primary btn-lg">Delete Student</a>
+      			</div>
+			</div>
+			<!--View Student-->
+			<div class="card bg-light" style="width:400px">
+				<img class="card-img-top" src="static/profile.jpg" alt="Card image" style="width:50%">
+				<div class="card-body">
+					<a href="stu-det" class="btn btn-outline-success btn-lg">View Student</a>
+      			</div>
+    		</div>
+			<!--Add Marks-->
+    		<div class="card bg-light" style="width:400px">
+				<img class="card-img-top" src="static/marks.png" alt="Card image" style="width:50%">
+      			<div class="card-body">
+					<a href="marks" class="btn btn-outline-dark btn-lg">Add Marks</a>
+				</div>
+    		</div>
+			<!--Update Student-->
+    		<div class="card bg-light" style="width:400px">
+				<img class="card-img-top" src="static/update2.jpg" alt="Card image" style="width:50%">
+      			<div class="card-body">
+					<a href="update" class="btn btn-outline-warning btn-lg">Update Student</a>
+				</div>
+    		</div>
+			<!--View Marks-->
+    		<div class="card bg-light" style="width:400px">
+				<img class="card-img-top" src="static/viewm.png" alt="Card image" style="width:50%">
+      			<div class="card-body">
+					<a href="mark-det" class="btn btn-outline-danger btn-lg">View Marks</a>
+      			</div>
+    		</div>
+  		</div>
+
+		<div class="card-columns" id="card2">
+			<!--Export Marks-->
+    		<div class="card bg-light" style="width:400px">
+				<img class="card-img-top" src="static/export.jpg" alt="Card image" style="width:50%">
+      			<div class="card-body">
+					<a href="export" class="btn btn-outline-success btn-lg">Export Marks</a>
+      			</div>
+    		</div>
+			<!--Train Model-->
+    		<div class="card bg-light" style="width:400px">
+				<img class="card-img-top" src="static/train.png" alt="Card image" style="width:50%">
+      			<div class="card-body">
+					<a href="train" class="btn btn-outline-warning btn-lg">Train</a>
+      			</div>
+    		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creating New User</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<style>
+			body {
+			  background-image: url('static/counselling_pic.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+
+			input[type=text], select {
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			}
+
+			div.form {
+			  border-radius: 5px;
+			  background-color: #f2f2f2;
+			  padding: 20px;
+			  position: relative;
+			  margin-left: 440px;
+			  margin-right: 440px;
+			}
+
+			div.jumbotron{
+				background-color: transparent;
+				color: white;
+			}
+
+			a {
+				text-align: center;
+				color: blue;
+				display: block;
+			}
+
+			a:hover {
+				color: red;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+			<h1><b>Welcome to Student's Counselling</b></h1>
+			<p><i>Confuse about the future subjects? Here we are to help you.</i></p>
+		</div>
+
+		<div class="form">
+			<form action="" method="post">
+                <label for="name">Email</label>
+				<input type="text" id="name" name="txtName1" placeholder="Enter Name">
+
+                <label for="phone">Email</label>
+				<input type="text" id="phone" name="txtPhone1" placeholder="Enter Phone">
+
+				<label for="email">Email</label>
+				<input type="text" id="email" name="txtEmail1" placeholder="Enter Email">
+
+				<label for="pass">Password</label>
+				<input type="text" id="pass" name="txtPassword1" placeholder="Enter Password">
+
+                <label for="pass1">Confirm Password</label>
+				<input type="text" id="pass1" name="txtCPassword1" placeholder="Re-enter Password">
+
+				<button type="button" class="btn btn-success">Register User</button>
+			</form>
+		</div>
+	</body>
+</html>
